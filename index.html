@@ -1,156 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <style>
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+        z-index: -1;
+      }
 
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background-color="#1e1e1e">
-					<h1>Participation in Code Europe</h1>
-					<h3>Insights and Takeaways</h3>
-					<p>Presented by [Your Name]</p>
-					<p>[Date]</p>
-			</section>
+      .qa {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+        padding: 30px;
+      }
 
-			<section data-transition="fade">
-					<h2>Introduction</h2>
-					<ul>
-							<li class="fragment">Welcome and Introduction</li>
-							<li class="fragment">Overview of Presentation Objectives</li>
-					</ul>
-			</section>
+      .image-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .image-slide img {
+        height: 450px; /* Set a fixed height for all images */
+        margin: 0 10px; /* Space between images */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-color="#292929">
+          <img data-src="public/logo.png" />
+          <p>10-11 June 2024</p>
+        </section>
 
-			<section data-transition="slide">
-					<h2>About Code Europe</h2>
-					<ul>
-							<li class="fragment">What is Code Europe?</li>
-							<li class="fragment">Key Statistics</li>
-							<ul>
-									<li class="fragment">Number of Attendees</li>
-									<li class="fragment">Types of Sessions</li>
-									<li class="fragment">Notable Speakers</li>
-							</ul>
-					</ul>
-			</section>
+        <section
+          data-transition="fade"
+          data-background-video="public/teaser.mp4"
+          data-background-video-muted
+          data-background-video-loop
+        >
+          <aside class="notes">
+            Code Europe is recognized as Poland's largest tech festival,
+            gathering top-tier experts and speakers from around the world to
+            share their insights and knowledge with thousands of attendees. The
+            festival focuses on various areas of technology, including
+            programming languages, blockchain, robotics, and more, providing a
+            platform for networking and learning among IT professionals and
+            enthusiast
+          </aside>
+        </section>
 
-			<section data-transition="convex">
-					<h2>Our Participation</h2>
-					<ul>
-							<li class="fragment">Team Members Who Attended</li>
-							<li class="fragment">Purpose of Attending</li>
-					</ul>
-			</section>
+        <section>
+          <div class="overlay"></div>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+          >
+            <h2>About Code Europe</h2>
+          </section>
 
-			<section data-transition="concave">
-					<h2>Key Learnings and Takeaways</h2>
-					<h3>New Trends and Technologies</h3>
-					<ul>
-							<li class="fragment">Trend 1</li>
-							<li class="fragment">Trend 2</li>
-							<li class="fragment">Trend 3</li>
-					</ul>
-			</section>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+          >
+            <h4>Types of Sessions</h4>
+            <img data-src="public/agenda.png" />
+          </section>
 
-			<section data-transition="zoom">
-					<h3>Best Practices and Methodologies</h3>
-					<ul>
-							<li class="fragment">Practice 1</li>
-							<li class="fragment">Practice 2</li>
-							<li class="fragment">Practice 3</li>
-					</ul>
-			</section>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+          >
+            <h3>Notable Speakers</h3>
+          </section>
 
-			<section data-transition="fade">
-					<h3>Keynote Highlights</h3>
-					<ul>
-							<li class="fragment">Highlight 1</li>
-							<li class="fragment">Highlight 2</li>
-							<li class="fragment">Highlight 3</li>
-					</ul>
-			</section>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+            date-transition="slide"
+          >
+            <img data-src="public/michelle.png" />
+          </section>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+            date-transition="slide"
+          >
+            <img data-src="public/ekaterina.png" />
+          </section>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+            date-transition="slide"
+          >
+            <img data-src="public/konrad.png" />
+          </section>
+        </section>
 
-			<section data-transition="slide">
-					<h3>Noteworthy Sessions and Workshops</h3>
-					<ul>
-							<li class="fragment">Session 1</li>
-							<li class="fragment">Session 2</li>
-							<li class="fragment">Session 3</li>
-					</ul>
-			</section>
+        <section>
+          <div class="overlay"></div>
 
-			<section data-transition="convex">
-					<h2>Networking and Connections</h2>
-					<ul>
-							<li class="fragment">Key People and Companies Met</li>
-							<li class="fragment">Potential Collaborations and Opportunities</li>
-					</ul>
-			</section>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+            date-transition="slide"
+          >
+            <h2>Our Participation</h2>
+            <ul>
+              <li>
+                Team Members Who Attended
+                <ul>
+                  <li>Daniel Dadak</li>
+                  <li>Kacper Małek</li>
+                  <li>Kajetan Poraj</li>
+                  <li>Karol Kozicki</li>
+                  <li>Piotr Kowal</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section
+            data-background-video="public/teaser.mp4"
+            data-background-video-muted
+            data-background-video-loop
+            date-transition="slide"
+          >
+            <div class="image-slide">
+              <img data-src="public/hrejterzy.jpg" />
+              <img data-src="public/gang.jpg" />
+              <img data-src="public/hayabit_kaj.jpg" />
+            </div>
+          </section>
+        </section>
 
-			<section data-transition="concave">
-					<h2>Impact on Our Projects</h2>
-					<ul>
-							<li class="fragment">Applying Insights to Current Projects</li>
-							<li class="fragment">Specific Examples</li>
-					</ul>
-			</section>
+        <section>
+          <section
+            data-background-position="left"
+            data-background-image="public/back.svg"
+          >
+            <h2>Key Learnings and Takeaways</h2>
+            <h3>New Trends and Technologies</h3>
+            <ul>
+              <li class="fragment">AI is everywhere</li>
+              <li class="fragment">No new JS frameworks</li>
+              <li class="fragment">Everyone is using LLM and genAI</li>
+            </ul>
+          </section>
+          <section
+            data-background-position="left"
+            data-background-image="public/back.svg"
+          >
+            <img data-src="public/ai_meme.jpg" />
+          </section>
+        </section>
 
-			<section data-transition="zoom">
-					<h2>Next Steps and Recommendations</h2>
-					<ul>
-							<li class="fragment">Action Items for the Team</li>
-							<li class="fragment">Suggested Changes or Improvements</li>
-							<li class="fragment">Training or Further Learning Opportunities</li>
-					</ul>
-			</section>
+        <section>
+          <section
+            data-background-position="left"
+            data-background-image="public/back.svg"
+          >
+            <h3>Highlights</h3>
+          </section>
+          <section
+            data-background-position="left"
+            data-background-image="public/back.svg"
+          >
+            <h3>All the use-cases of AI</h3>
+            <div class="image-slide">
+              <img data-src="public/ai_graph.jpg" />
+              <img data-src="public/nvidia.jpg" />
+            </div>
+          </section>
+          <section
+            data-background-position="left"
+            data-background-image="public/back.svg"
+          >
+            <h3>Free coffee and beer 🍺</h3>
+			<div class="image-slide">
+				<img data-src="public/coffe.jpg" />
+				<img data-src="public/beer.jpg" />
+			  </div>
+          </section>
+        </section>
 
-			<section data-transition="fade">
-					<h2>Q&A Session</h2>
-					<p>Open the floor for questions</p>
-			</section>
+        <section
+          data-background-position="left"
+          data-background-image="public/back.svg"
+        >
+          <h2>Impact on Our Projects</h2>
+          <ul>
+            <li class="fragment">Fresh approach to old problems</li>
+            <li class="fragment">Team integration</li>
+          </ul>
+        </section>
 
-			<section data-transition="slide">
-					<h2>Conclusion</h2>
-					<ul>
-							<li class="fragment">Recap of Key Points</li>
-							<li class="fragment">Closing Remarks and Thank You</li>
-					</ul>
-			</section>
+        <section
+          data-background-video="public/teaser.mp4"
+          data-background-video-muted
+          data-background-video-loop
+          date-transition="slide"
+        >
+          <h1><span class="qa">Q&A</span></h1>
+        </section>
+      </div>
+    </div>
 
-			<section data-background-color="#1e1e1e">
-					<h2>Contact Information</h2>
-					<p>[Your Name]</p>
-					<p>[Your Email]</p>
-					<p>[Your Phone Number]</p>
-			</section>
-			</div>
-		</div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        background: {
+          image: "url(public/back.svg)",
+          position: "left", // Position of the background image
+          repeat: "no-repeat", // Repeat option for the background
+        },
+      });
+    </script>
+  </body>
 </html>
